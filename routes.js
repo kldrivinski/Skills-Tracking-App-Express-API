@@ -40,7 +40,7 @@ routes.get("/employees", (req, res) => {
 
 // GET // sort all employees by id desc
 
-routes.get("/employees/desc", (req, res) => {
+routes.get("/employeesDesc", (req, res) => {
     let sql = "SELECT * FROM employee_skills Order by id Desc";
     pool.query(sql).then(result => {
         console.log(result.rows);
@@ -49,7 +49,7 @@ routes.get("/employees/desc", (req, res) => {
 });
 
 // GET / get employees ordered by id descending
-routes.get("/employees/sortIdDsc", (req, res) => {
+routes.get("/employeesSortIdDsc/", (req, res) => {
     let sql = "SELECT * FROM employee_skills Order by id Desc";
     pool.query(sql).then(result => {
         console.log(result.rows);
@@ -59,7 +59,7 @@ routes.get("/employees/sortIdDsc", (req, res) => {
 
 
 // GET / get employees ordered by name ascending 
-routes.get("/employees/sortName", (req, res) => {
+routes.get("/employeesSortName", (req, res) => {
     let sql = "SELECT * FROM employee_skills Order by employeeName";
     pool.query(sql).then(result => {
         console.log(result.rows);
@@ -69,7 +69,7 @@ routes.get("/employees/sortName", (req, res) => {
 
 
 // GET / get employees ordered by named descending
-routes.get("/employees/sortNameDsc", (req, res) => {
+routes.get("/employeesSortNameDsc", (req, res) => {
     let sql = "SELECT * FROM employee_skills Order by employeeName Desc";
     pool.query(sql).then(result => {
         console.log(result.rows);
@@ -80,7 +80,7 @@ routes.get("/employees/sortNameDsc", (req, res) => {
 
 
 // GET / get employees ordered by angular ascending 
-routes.get("/employees/sortAngular", (req, res) => {
+routes.get("/employeesSortAngular", (req, res) => {
     let sql = "SELECT * FROM employee_skills Order by angular";
     pool.query(sql).then(result => {
         console.log(result.rows);
@@ -90,7 +90,7 @@ routes.get("/employees/sortAngular", (req, res) => {
 
 
 // GET / get employees ordered by angular descending
-routes.get("/employees/sortAngularDsc", (req, res) => {
+routes.get("/employeesSortAngularDsc", (req, res) => {
     let sql = "SELECT * FROM employee_skills Order by angular Desc";
     pool.query(sql).then(result => {
         console.log(result.rows);
@@ -99,7 +99,7 @@ routes.get("/employees/sortAngularDsc", (req, res) => {
 })
 
 // GET / get employees ordered by javascript ascending 
-routes.get("/employees/sortJs", (req, res) => {
+routes.get("/employeesSortJs", (req, res) => {
     let sql = "SELECT * FROM employee_skills Order by javascript";
     pool.query(sql).then(result => {
         console.log(result.rows);
@@ -109,7 +109,7 @@ routes.get("/employees/sortJs", (req, res) => {
 
 
 // GET / get employees ordered by javscript descending
-routes.get("/employees/sortJsDsc", (req, res) => {
+routes.get("/employeesSortJsDsc", (req, res) => {
     let sql = "SELECT * FROM employee_skills Order by javascript Desc";
     pool.query(sql).then(result => {
         console.log(result.rows);
@@ -118,7 +118,7 @@ routes.get("/employees/sortJsDsc", (req, res) => {
 })
 
 // GET / get employees ordered by html ascending 
-routes.get("/employees/sortHtml", (req, res) => {
+routes.get("/employeesSortHtml", (req, res) => {
     let sql = "SELECT * FROM employee_skills Order by html";
     pool.query(sql).then(result => {
         console.log(result.rows);
@@ -128,7 +128,7 @@ routes.get("/employees/sortHtml", (req, res) => {
 
 
 // GET / get employees ordered by html descending
-routes.get("/employees/sortHtmlDsc", (req, res) => {
+routes.get("/employeesSortHtmlDsc", (req, res) => {
     let sql = "SELECT * FROM employee_skills Order by html Desc";
     pool.query(sql).then(result => {
         console.log(result.rows);
@@ -138,7 +138,7 @@ routes.get("/employees/sortHtmlDsc", (req, res) => {
 
 
 // GET / get employees ordered by css ascending 
-routes.get("/employees/sortCss", (req, res) => {
+routes.get("/employeesSortCss", (req, res) => {
     let sql = "SELECT * FROM employee_skills Order by css";
     pool.query(sql).then(result => {
         console.log(result.rows);
@@ -148,7 +148,7 @@ routes.get("/employees/sortCss", (req, res) => {
 
 
 // GET / get employees ordered by css descending
-routes.get("/employees/sortCssDsc", (req, res) => {
+routes.get("/employeesSortCssDsc", (req, res) => {
     let sql = "SELECT * FROM employee_skills Order by css Desc";
     pool.query(sql).then(result => {
         console.log(result.rows);
@@ -157,7 +157,7 @@ routes.get("/employees/sortCssDsc", (req, res) => {
 });
 
 // GET / get employees ordered by email ascending 
-routes.get("/employees/sortEmail", (req, res) => {
+routes.get("/employeesSortEmail", (req, res) => {
     let sql = "SELECT * FROM employee_skills Order by email";
     pool.query(sql).then(result => {
         console.log(result.rows);
@@ -167,7 +167,7 @@ routes.get("/employees/sortEmail", (req, res) => {
 
 
 // GET / get employees ordered by email descending
-routes.get("/employees/sortEmailDsc", (req, res) => {
+routes.get("/employeesSortEmailDsc", (req, res) => {
     let sql = "SELECT * FROM employee_skills Order by email Desc";
     pool.query(sql).then(result => {
         console.log(result.rows);
